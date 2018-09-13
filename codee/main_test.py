@@ -31,7 +31,7 @@ def showCar(flag):
 
 def moveObject(pot):
     pot[0] += (moveDict[pygame.K_RIGHT] - moveDict[pygame.K_LEFT])
-    pot[0] += (moveDict[pygame.K_DOWN] - moveDict[pygame.K_UP])
+    pot[1] += (moveDict[pygame.K_DOWN] - moveDict[pygame.K_UP])
     if pot[0] < 0:
         pot[0] = 0
     if pot[1] < 0:
